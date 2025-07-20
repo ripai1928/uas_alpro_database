@@ -1,0 +1,29 @@
+--tabel karyawan
+CREATE TABLE karyawan (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    jabatan VARCHAR(50),
+    gaji INT,
+    no_hp VARCHAR(20),
+    alamat TEXT
+);
+
+--tabel absensi
+CREATE TABLE absensi (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama_karyawan VARCHAR(100) NOT NULL,
+    tanggal DATE,
+    jam_masuk TIME,
+    jam_keluar TIME
+);
+
+--tabel gaji
+CREATE TABLE gaji (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama_karyawan VARCHAR(100) NOT NULL,
+    bulan VARCHAR(20),
+    gaji_pokok INT,
+    tunjangan INT,
+    total INT
+);
+ 
